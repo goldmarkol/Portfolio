@@ -1,0 +1,70 @@
+.about {
+  &__block {
+    display: flex;
+    padding: 120px 0;
+  }
+
+  &__subtitle {
+    @include before_circle;
+
+    position: relative;
+    padding-left: 10px;
+    z-index: 2;
+  }
+
+  &__wrapper {
+    width: 570px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black-color-1;
+  }
+
+  &__skill-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $black-color-1;
+  }
+
+  &__skills-group {
+    max-width: 260px;
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__skill-icon {
+    position: relative;
+    top: 15px;
+    left: 5px;
+    z-index: 5;
+  }
+
+  &__skill {
+    @include before_circle;
+
+    &::before {
+      top: 0;
+    }
+
+    position: relative;
+    padding-left: 10px;
+    z-index: 2;
+    margin-right: 24px;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+
+.photo {
+  margin-right: 70px;
+}
