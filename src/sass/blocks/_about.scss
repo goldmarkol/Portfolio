@@ -1,7 +1,7 @@
 .about {
   &__block {
     display: flex;
-    padding: 120px 0;
+    padding-top: 120px;
   }
 
   &__subtitle {
@@ -14,6 +14,10 @@
 
   &__wrapper {
     width: 570px;
+
+    .divider {
+      margin: 0;
+    }
   }
 
   &__text {
