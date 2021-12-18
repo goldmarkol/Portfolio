@@ -1,0 +1,98 @@
+.skills {
+  padding-top: 120px;
+
+  &__title {
+    text-align: center;
+    position: relative;
+
+    @include before_circle;
+
+    &:before {
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    padding-top: 60px;
+    grid-template-columns: repeat(4, 270px);
+    column-gap: 13px;
+    row-gap: 13px;
+  }
+
+  &__item {
+    border: 1px solid $black-color-1;
+    box-sizing: border-box;
+    padding: 30px;
+
+    &-title {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &-text {
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &-img {
+      height: 50px;
+    }
+  }
+
+  &__progress {
+    display: grid;
+    padding-top: 120px;
+    grid-template-columns: repeat(3, 350px);
+    column-gap: 45px;
+    row-gap: 30px;
+
+    &-subtitle {
+      position: relative;
+      padding: 2px 0 0 10px;
+      @include before_circle;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: -1;
+        left: 0;
+        top: -25%;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-bar-default {
+      margin-top: 20px;
+      position: relative;
+      width: 350px;
+      height: 14px;
+      background-color: $grey-color;
+      border-radius: 4px;
+    }
+
+    &-bar-orange {
+      position: absolute;
+      height: 14px;
+      background-color: $main-color;
+    }
+  }
+}
